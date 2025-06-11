@@ -45,7 +45,7 @@ Then visit http://localhost:5000 in your browser.
 
 1. **Build the image**
 ```bash
-docker build -t ip-calc .
+docker build -t mtg-flask .
 ```
 
 2. **Run the container**
