@@ -1,7 +1,0 @@
-[project]
-name = "mtg-flask"
-version = "0.1.0"
-description = "This website allows you to browse all MTG Cards available on the MTG API"
-readme = "README.md"
-requires-python = ">=3.13"
-dependencies = []
