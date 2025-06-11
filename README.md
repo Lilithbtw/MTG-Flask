@@ -3,13 +3,13 @@ This website allows you to browse all MTG Cards available on the MTG API https:/
 
 ## Future Features 
 - Simple Web-UI
-- 
+- Docker Ready 
 
 ## To-Do list
-[❌] Create a Dockerfile
-[❌] Push the Image to DockerHub
-[❌] Show only the first 20 cards
-[❌] Finish the Website
+- [❌] Create a Dockerfile
+- [❌] Push the Image to DockerHub
+- [❌] Show only the first 20 cards
+- [❌] Finish the Website
 
 ## Installation (Local)
 
