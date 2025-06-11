@@ -35,7 +35,7 @@ pip install -r requirements.txt
 4. **Run the Application**
 
 ```bash
-python mtg-web.py
+python main.py
 ```
 
 Then visit http://localhost:5000 in your browser.
