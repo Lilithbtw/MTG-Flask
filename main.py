@@ -4,7 +4,7 @@ app = Flask(__name__, template_folder='templates')
 port = 5000
 
 
-@app.route("/", methods=['GET','POST'])
+@app.route("/", methods=['GET'])
 def index():
     return render_template('index.html')
 
