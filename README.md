@@ -8,8 +8,7 @@ This website allows you to browse all MTG Cards available on the MTG API https:/
 ## To-Do list
 - [❌] Create a Dockerfile
 - [❌] Push the Image to DockerHub
-- [❌] Show only the first 20 cards
-- [❌] Finish the Website
+- [✅] Finish the Website
 
 ## Installation (Local)
 
