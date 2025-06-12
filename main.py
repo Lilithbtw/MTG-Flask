@@ -22,7 +22,6 @@ class Card:
 @app.route("/", methods=['GET'])
 def index():
     search = request.args.get("search", '')
-    page = request.args.get("page", '')
 
     encoded_search = quote(search)
     url = f"{full_api_url}/search?q={encoded_search}"
