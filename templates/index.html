@@ -156,20 +156,42 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 <div class="container-fluid">
-        <div class="search-container">
-            <form method="GET" action="" class="mb-4">
-                <div class="input-group">
-                    <input type="text" name="search" class="form-control" placeholder="Search by card name">
-                    <button type="submit" class="btn btn-primary">Search</button>
+    <div class="search-container">
+        <form method="GET" action="" class="mb-4">
+            <div class="input-group">
+                <input type="text" name="search" class="form-control" placeholder="Search by card name">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="card-container">
+        {% if object == "error" %}
+            <p>{{ err }}</p>
+        {% else %}
+            {% for card in cards %}
+                <div class="mtg-card">
+                    <img src="{{ card.img[1] }}" alt="{{ card.name }}" class="card-image">
+                        <div class="card-overlay">
+                            <div class="card-header">
+                                <h5 class="card-name">{{ card.name }}</h5>
+                                <span class="mana-cost">MANA_COST_HERE</span>
+                            </div>
+                            <div class="card-info">
+                                <div><strong>Types:</strong> {{ card.type }}</div>
+                                <div><strong>Rarity:</strong> {{ card.rarity }}</div>
+                            </div>
+                            <div class="card-text">{{ card.txt }}</div>
+                    </div>
                 </div>
-            </form>
+            {%endfor%}
+        {% endif %}
         </div>
-        
-        <div class="card-container">
+    </div>
+</div>

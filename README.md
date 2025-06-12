@@ -1,5 +1,5 @@
 # Flask MTG Card finder
-This website allows you to browse all MTG Cards available on the MTG API https://api.magicthegathering.io/v1/cards this project is a rewrite of my school project that was written in PHP it's now being rewritten to python
+This website allows you to browse all MTG Cards available on the MTG API https://api.scryfall.com/cards/ this project is a rewrite of my school project that was written in PHP it's now being rewritten to python, previously the API was the https://api.magicthegathering.io/
 
 ## Future Features 
 - Simple Web-UI
