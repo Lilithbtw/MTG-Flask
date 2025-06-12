@@ -22,9 +22,11 @@ class Card:
 @app.route("/", methods=['GET'])
 def index():
     search = request.args.get("search", '')
+    page = request.args.get("page", '')
+
     encoded_search = quote(search)
     url = f"{full_api_url}/search?q={encoded_search}"
-    
+
     response = requests.get(url)
     
     data = response.json()
@@ -41,6 +43,7 @@ def index():
         for card in data["data"]:
 
             if ("image_uris" and "oracle_text") in card.keys():
+
                 image_pre = card["image_uris"]
                 cards.append(
                     Card(
